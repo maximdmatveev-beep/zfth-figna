@@ -8,7 +8,10 @@ while True:
             else:
                 for i in range(number_tiles):
                     for j in  range(number_tiles):
-                        print('■ □', end=' ')
+                        if (i+j) % 2 == 0:
+                            print('■', end=' ')
+                        else:
+                            print('□', end=' ')
                     print()
         else:
             print('неверный ввод, введите четное число')
